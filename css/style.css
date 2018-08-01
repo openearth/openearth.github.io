@@ -263,3 +263,8 @@ nav a.button-collapse {
 footer.page-footer {
     margin-top: 0px !important;
 }
+
+.logohead {	
+	height: 60px;
+	padding:10px 10px 10px 10px;
+}
