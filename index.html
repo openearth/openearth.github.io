@@ -1,608 +1,588 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#2196F3">
-    <title>OpenEarth</title>
 
-    <!-- CSS  -->
-    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
-	<link href="css/style.css" type="text/css" rel="stylesheet" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta name="theme-color" content="#2196F3">
+	<title>OpenEarth</title>
+
+	<!-- CSS  -->
+	<link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+	<link href="min/custom-min.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body id="top" class="scrollspy">
 
-<!-- Pre Loader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
+	<!-- Pre Loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
 
-</div>
+	</div>
 
-<!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo"><img class="logohead" src="img/logo-oe.png"></a>
-                <ul class="right hide-on-med-and-down">                    
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#team">Team</a></li>                    
-                    <li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public WIKI</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">                    
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#team">Team</a></li>                    
-                    <li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public WIKI</a></li>
-                </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<!--Hero-->
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
-            <span>OpenEarth is</span>
-            <span class="cd-words-wrapper waiting">
-                <b class="is-visible">open source</b>
-                <b>standardization</b>
-                <b>web services</b>
-                <b>visualization</b>
-            </span>
-        </h1>
-    </div>
-</div>
-
-<!--Intro and service-->
-<div id="intro" class="section scrollspy">
-    <div class="container">
-        <div class="row">
-            <div  class="col s12">
-                <h4 class="center header text_h2"> <span class="span_h2">OpenEarth</span> uses <span class="span_h2">open source tools</span> for kickstarting your tailor-made data management solution. This will help you in storing, sharing and providing information of valuable data, such as <span class="span_h2"> observations</span>, <span class="span_h2"> geographic data</span>,
-                and <span class="span_h2"> model results </span> </h4>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="center promo promo-example">
-                    <i class="mdi-notification-folder-special"></i>
-                    <!-- <i class="mdi mdi-folder-multiple-image"></i> -->
-
-                    <h5 class="promo-caption">Data is essential</h5>
-					<p class="light center">The most valuable part of every data intensive project is data. Data gathering often requires a substantial part of the budget of a project. Centralized, discoverable and easy to access to data that can be easily reused in other projects is of vital importance for current and future work.</p>
-				</div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="mdi center promo promo-example">
-                    <i class="mdi-toggle-check-box"></i>
-					<h5 class="promo-caption">Data management checklist!</h5>
-                    <p class="light center">Do you recognize yourself in the following statements?
-					<ul class="light center">
-						<li>Do you use <strong>standardized</strong> formats?</li>
-						<li>Can you <strong>download</strong> your data online?</li>
-						<li>Can you show <strong>maps</strong> of your data online?</li>
-						<li>Can others <strong>find</strong> your datasets?</li>
-						<li>Do you <strong>validate</strong> your data?</li>
-						<li>Do you keep your <strong>raw data</strong>?</li>
-						<li>Is your data processing <strong>automated</strong>?</li>
-						<li>Do you keep track of issues <strong>(lineage)</strong>?</li>
-						<li>Do you have a <strong>data model</strong>?</li>
+	<!--Navigation-->
+	<div class="navbar-fixed">
+		<nav id="nav_f" class="default_color" role="navigation">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" id="logo-container" class="brand-logo"><img class="logohead" src="img/logo-oe.png"></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#work">Work</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public WIKI</a></li>
 					</ul>
-                    </p>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="center promo promo-example">
-                    <i class="mdi-action-thumb-up"></i>
-                    <h5 class="promo-caption">OpenEarth greatly improves data management</h5>
-                    <p class="light center">OpenEarth consists of Open Source tools to transform and store your data in a standardized format. This enables you to easily:</p>
-					<ul class="light center">
-					<li><strong>Show</strong> the data in online viewers</li>
-					<li>Help others <strong>find</strong> your data in online catalogues</li>
-					<li><strong>Share</strong> the data through an online download</li>
-					<li>Store the changes in the data <strong>(version control)</strong></li>
+					<ul id="nav-mobile" class="side-nav">
+						<li><a href="#work">Work</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public WIKI</a></li>
 					</ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+	</div>
 
-<!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax_veg.jpg"></div>
-</div>
+	<!--Hero-->
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<h1 class="text_h center header cd-headline letters type">
+				<span>OpenEarth is</span>
+				<span class="cd-words-wrapper waiting">
+					<b class="is-visible">open source</b>
+					<b>standardization</b>
+					<b>web services</b>
+					<b>visualization</b>
+				</span>
+			</h1>
+		</div>
+	</div>
 
-<!--Work-->
-<div class="section scrollspy" id="work">
-    <div class="container">
-        <h4 class="header text_b">OpenEarth projects</h4>
-        
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/vegetatiemonitor.png">
+	<!--Intro and service-->
+	<div id="intro" class="section scrollspy">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h4 class="center header text_h2"> <span class="span_h2">OpenEarth</span> uses <span class="span_h2">open source tools</span> for kickstarting your tailor-made data management solution. This will help you in storing, sharing and providing
+						information of valuable data, such as <span class="span_h2"> observations</span>, <span class="span_h2"> geographic data</span>,
+						and <span class="span_h2"> model results </span> </h4>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="center promo promo-example">
+						<i class="mdi-notification-folder-special"></i>
+						<!-- <i class="mdi mdi-folder-multiple-image"></i> -->
+
+						<h5 class="promo-caption">Data is essential</h5>
+						<p class="light center">The most valuable part of every data intensive project is data. Data gathering often requires a substantial part of the budget of a project. Centralized, discoverable and easy to access to data that can be easily
+							reused in other projects is of vital importance for current and future work.</p>
 					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Vegetatie Monitor<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://www.openearth.nl/vegetatiemonitor">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Vegetatie Monitor<i class="mdi-navigation-close right"></i></span>
-						<p>
-						This quick scan tool is developed by Rijkswaterstaat and Deltares and can only be used as a first screening of the state of vegetation in the flood plains of the Dutch river area for the selected satellite image.
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="mdi center promo promo-example">
+						<i class="mdi-toggle-check-box"></i>
+						<h5 class="promo-caption">Data management checklist!</h5>
+						<p class="light center">Do you recognize yourself in the following statements?
+							<ul class="light center">
+								<li>Do you use <strong>standardized</strong> formats?</li>
+								<li>Can you <strong>download</strong> your data online?</li>
+								<li>Can you show <strong>maps</strong> of your data online?</li>
+								<li>Can others <strong>find</strong> your datasets?</li>
+								<li>Do you <strong>validate</strong> your data?</li>
+								<li>Do you keep your <strong>raw data</strong>?</li>
+								<li>Is your data processing <strong>automated</strong>?</li>
+								<li>Do you keep track of issues <strong>(lineage)</strong>?</li>
+								<li>Do you have a <strong>data model</strong>?</li>
+							</ul>
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/ri2de.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">RI2DE (Road infrastructure)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://ri2de.openearth.eu">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">RI2DE (Road infrastructure)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						Ri2de is a webGIS toolkit based on global road datasets [OpenStreetMap] in combination with raster data to calculate road susceptibility [slope, distance to water among others]. The tool is designed to be flexible and configurable to be adapted to every country's road infrastructure evaluation needs.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/ast20.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">AST 2.0 (Urban planning)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://ast-2-0.netlify.com/en/">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">AST 2.0 (Urban planning)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						The Adaptation and Support tool [AST] was developed by Deltares and can be used to explore measures that increase the water resilience of an area.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>		
-		
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/msfd_eutro.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">MSFD-Eutro (Water quality)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="http://www.openearth.nl/msfd-eutro/">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">MSFD-Eutro (Water quality)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						MSFD-Eutro is a free and open, active and interactive web-mapping service that shows chlorophyll indicator maps based on growing-season
- statistics (mean, and max as P90). MSFD-Eutro aims to facilitate the use and appreciation of ocean colour data by policy
- advisors and policy makers for the European Marine Strategy Framework Directive (MSFD)
-						</p>
-					</div>
-				</div>
-			</div>			
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/kkt.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">KKT (Farm water quality)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://keukentafeltool.openearth.eu">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">KKT (Farm water quality)<i class="mdi-navigation-close right"></i></span>
-						<p>With this tool, dutch farmers will be able to see the effects of measures to improve the water quality (nutrients concentration) in their parcels (BRP).</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/nhidataportaal.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">NHI viewer (Groundwater)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://data.nhi.nu">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">NHI viewer (Groundwater)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						The Dutch Hydrological Instrumentarium (NHI) is a toolbox for software and data for the development of groundwater and surface water models on a national and regional scale. Within NHI we work towards open data and software. In this portal a start has been made with the opening up of data and NHI data can be viewed and downloaded.
+				<div class="col s12 m4 l4">
+					<div class="center promo promo-example">
+						<i class="mdi-action-thumb-up"></i>
+						<h5 class="promo-caption">OpenEarth greatly improves data management</h5>
+						<p class="light center">OpenEarth consists of Open Source tools to transform and store your data in a standardized format. This enables you to easily:</p>
+						<ul class="light center">
+							<li><strong>Show</strong> the data in online viewers</li>
+							<li>Help others <strong>find</strong> your data in online catalogues</li>
+							<li><strong>Share</strong> the data through an online download</li>
+							<li>Store the changes in the data <strong>(version control)</strong></li>
+						</ul>
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/mepduinen.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">MEP duinen (Coastal)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://mepduinen.openearth.nl">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">MEP duinen (Coastal)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						In the context of compensation for the construction of the Second Maasvlakte, the Kappiteluinen area has been redeveloped. Measurements have been carried out for a number of years to monitor the developments of the area. This data is collected on a version-managed storage pending further processing of this data into products / information for end users. This is partly data collected in recent years and partly data that have yet to be collected in the coming years.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fast.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">FAST EU Space (Coastal)<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://fast.openearth.eu">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">FAST EU Space (Coastal)<i class="mdi-navigation-close right"></i></span>
-						<p>FAST gives a first indication of the effect of vegetation on foreshore protection. Sentinel data is used for high resolution information about vegetation presence and intertidal elevation.</p>
-					</div>
-				</div>
-			</div>			
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/zeeland.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Onttrekkingconsult (Groundwater) <i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://onttrekkingsconsultzeeland.openearth.eu/zeeland_viewer/index.htm">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Onttrekkingconsult (Groundwater)<i class="mdi-navigation-close right"></i></span>
-						<p>
-						Thanks to this web application the reduction of the groundwater level as a result of vertical groundwater abstraction can be estimated. In particular, the tool is intended to estimate the influence of (temporary) vertical groundwater extraction (such as source dewatering) in the vicinity of vulnerable nature reserves.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!--Parallax-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="img/parallax_veg.jpg"></div>
+	</div>
 
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/safer-schools.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Safer schools<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://www.openearth.nl/safer-schools">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Safer schools<i class="mdi-navigation-close right"></i></span>
-						<p>Mozambique is a country threatened by several natural hazards, the most frequent of which are droughts, floods and tropical cyclones. Irregular and limited rainfall results in water scarcity. Floods and cyclones are recurrent hazards that severely impact infrastructure, services and the economy. Mozambique is also at risk of earthquakes due to its location at the intersection of the African Nubian plate on the west and the African Somalia plate on the east, at the southern end of the East African Rift, which is the source of many major African earthquakes.
-In this viewer the hazards, with their impacts and exposure of the school buildings in Mozambique are visualized.
-</p>
-					</div>
-				</div>
-			</div>			
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/sandmotor-viewer.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Sandmotor Viewer<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://www.openearth.nl/sandmotor-viewer">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Sandmotor Viewer<i class="mdi-navigation-close right"></i></span>
-						<p>The SandMotorViewer is a web viewer built for TU Delft, following a request from the University of visualizing data collected in and around the SandMotor since its birth in 2011. Data is stored as NetCDF in an OPeNDAP server. Bathymetric data, sediment grainsize distribution, aeolian Transport, drifters path can be visualized via the Web interface, allowing the user to change time span and generate graphs of requested variables.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/nutmaas.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Nutrienten aanpak Maas<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://nutrientenmaas.openearth.nl/nutrientenMaas/index.htm">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Nutrienten aanpak Maas<i class="mdi-navigation-close right"></i></span>
-						<p>
-						This area atlas contributes to the exploration of solution variants for nutrients in surface water and groundwater protection areas in the Meuse region. In the atlas we present available maps and knowledge about subsurface, hydrology, water quality and policy. This information is input for discussions in the pilot areas on solutions.		
-						</p>
-					</div>
-				</div>
-			</div>				
-		</div>		
-		
-		<h4 class="header text_b">OpenEarth open data portals</h4>
-		
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/deltaresdp.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Deltares data portal<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://deltaresdata.openearth.eu/geonetwork">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Deltares data portal<i class="mdi-navigation-close right"></i></span>
-						<p>
-						The Deltares Data Portal is the starting place to find and publish spatial data sets. The portal facilitates the discovery, multiple usage and dissemination of spatial data.	
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fastdp.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">FAST EU data portal<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://fast.openearth.eu/geonetwork">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">FAST EU data portal<i class="mdi-navigation-close right"></i></span>
-						<p>
-						FAST is developing down-stream services for the European Earth Observation Programme Copernicus to support cost-effective, nature-based shoreline protection against flooding and erosion. Open global datasets can be found in the data portal.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/nhidp.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">NHI data portal<i class="mdi-navigation-more-vert right"></i></span>
-						<p><a target="_blank" href="https://data.nhi.nu/dataportaal">click to explore</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">NHI data portal<i class="mdi-navigation-close right"></i></span>
-						<p>
-						The Dutch Hydrological Instrumentarium (NHI) is a toolbox for software and data for the development of groundwater and surface water models on a national and regional scale. Within NHI we work towards open data and software. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-  </div>
-</div>
+	<!--Work-->
+	<div class="section scrollspy" id="work">
+		<div class="container">
+			<h4 class="header text_b">OpenEarth projects</h4>
 
-<!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax_mep.png"></div>
-</div>
-
-<!--Team-->
-<div class="section scrollspy" id="team">
-    <div class="container">
-        <h2 class="header text_b"> OpenEarth Experts</h2>
-        <div class="row">
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/fedor.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Fedor Baart<br/>
-                            <small><em><a class="red-text text-darken-1">Specialist</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Fedor">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/anna.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Anna van Gils<br/>
-                            <small><em><a class="red-text text-darken-1">Backend developer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Anna">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/gerrit.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Gerrit Hendriksen<br/>
-                            <small><em><a class="red-text text-darken-1">Geodata specialist</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Gerrit">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-			<div class="col s12 m3">
-					<div class="card card-avatar">
-						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/joan.jpg">
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/vegetatiemonitor.png">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Joan Sala Calero<br/>
-								<small><em><a class="red-text text-darken-1">Advisor/developer</a></em></small>
+							<span class="card-title activator grey-text text-darken-4">Vegetatie Monitor<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://www.openearth.nl/vegetatiemonitor">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Vegetatie Monitor<i class="mdi-navigation-close right"></i></span>
+							<p>
+								This quick scan tool is developed by Rijkswaterstaat and Deltares and can only be used as a first screening of the state of vegetation in the flood plains of the Dutch river area for the selected satellite image.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/ri2de.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">RI2DE (Road infrastructure)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://ri2de.openearth.eu">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">RI2DE (Road infrastructure)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								Ri2de is a webGIS toolkit based on global road datasets [OpenStreetMap] in combination with raster data to calculate road susceptibility [slope, distance to water among others]. The tool is designed to be flexible and configurable to
+								be adapted to every country's road infrastructure evaluation needs.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/ast20.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">AST 2.0 (Urban planning)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://ast-2-0.netlify.com/en/">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">AST 2.0 (Urban planning)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								The Adaptation and Support tool [AST] was developed by Deltares and can be used to explore measures that increase the water resilience of an area.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/msfd_eutro.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">MSFD-Eutro (Water quality)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="http://www.openearth.nl/msfd-eutro/">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">MSFD-Eutro (Water quality)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								MSFD-Eutro is a free and open, active and interactive web-mapping service that shows chlorophyll indicator maps based on growing-season
+								statistics (mean, and max as P90). MSFD-Eutro aims to facilitate the use and appreciation of ocean colour data by policy
+								advisors and policy makers for the European Marine Strategy Framework Directive (MSFD)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/kkt.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">KKT (Farm water quality)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://keukentafeltool.openearth.eu">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">KKT (Farm water quality)<i class="mdi-navigation-close right"></i></span>
+							<p>With this tool, dutch farmers will be able to see the effects of measures to improve the water quality (nutrients concentration) in their parcels (BRP).</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/nhidataportaal.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">NHI viewer (Groundwater)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://data.nhi.nu">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">NHI viewer (Groundwater)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								The Dutch Hydrological Instrumentarium (NHI) is a toolbox for software and data for the development of groundwater and surface water models on a national and regional scale. Within NHI we work towards open data and software. In this
+								portal a start has been made with the opening up of data and NHI data can be viewed and downloaded.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/mepduinen.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">MEP duinen (Coastal)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://mepduinen.openearth.nl">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">MEP duinen (Coastal)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								In the context of compensation for the construction of the Second Maasvlakte, the Kappiteluinen area has been redeveloped. Measurements have been carried out for a number of years to monitor the developments of the area. This data is
+								collected on a version-managed storage pending further processing of this data into products / information for end users. This is partly data collected in recent years and partly data that have yet to be collected in the coming years.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/fast.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">FAST EU Space (Coastal)<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://fast.openearth.eu">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">FAST EU Space (Coastal)<i class="mdi-navigation-close right"></i></span>
+							<p>FAST gives a first indication of the effect of vegetation on foreshore protection. Sentinel data is used for high resolution information about vegetation presence and intertidal elevation.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/zeeland.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Onttrekkingconsult (Groundwater) <i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://onttrekkingsconsultzeeland.openearth.eu/zeeland_viewer/index.htm">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Onttrekkingconsult (Groundwater)<i class="mdi-navigation-close right"></i></span>
+							<p>
+								Thanks to this web application the reduction of the groundwater level as a result of vertical groundwater abstraction can be estimated. In particular, the tool is intended to estimate the influence of (temporary) vertical groundwater
+								extraction (such as source dewatering) in the vicinity of vulnerable nature reserves.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/safer-schools.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Safer schools<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://www.openearth.nl/safer-schools">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Safer schools<i class="mdi-navigation-close right"></i></span>
+							<p>Mozambique is a country threatened by several natural hazards, the most frequent of which are droughts, floods and tropical cyclones. Irregular and limited rainfall results in water scarcity. Floods and cyclones are recurrent hazards
+								that severely impact infrastructure, services and the economy. Mozambique is also at risk of earthquakes due to its location at the intersection of the African Nubian plate on the west and the African Somalia plate on the east, at the
+								southern end of the East African Rift, which is the source of many major African earthquakes.
+								In this viewer the hazards, with their impacts and exposure of the school buildings in Mozambique are visualized.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/sandmotor-viewer.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Sandmotor Viewer<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://www.openearth.nl/sandmotor-viewer">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Sandmotor Viewer<i class="mdi-navigation-close right"></i></span>
+							<p>The SandMotorViewer is a web viewer built for TU Delft, following a request from the University of visualizing data collected in and around the SandMotor since its birth in 2011. Data is stored as NetCDF in an OPeNDAP server.
+								Bathymetric data, sediment grainsize distribution, aeolian Transport, drifters path can be visualized via the Web interface, allowing the user to change time span and generate graphs of requested variables.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/nutmaas.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nutrienten aanpak Maas<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://nutrientenmaas.openearth.nl/nutrientenMaas/index.htm">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nutrienten aanpak Maas<i class="mdi-navigation-close right"></i></span>
+							<p>
+								This area atlas contributes to the exploration of solution variants for nutrients in surface water and groundwater protection areas in the Meuse region. In the atlas we present available maps and knowledge about subsurface, hydrology,
+								water quality and policy. This information is input for discussions in the pilot areas on solutions.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h4 class="header text_b">OpenEarth open data portals</h4>
+
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/deltaresdp.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Deltares data portal<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://deltaresdata.openearth.eu/geonetwork">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Deltares data portal<i class="mdi-navigation-close right"></i></span>
+							<p>
+								The Deltares Data Portal is the starting place to find and publish spatial data sets. The portal facilitates the discovery, multiple usage and dissemination of spatial data.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/fastdp.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">FAST EU data portal<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://fast.openearth.eu/geonetwork">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">FAST EU data portal<i class="mdi-navigation-close right"></i></span>
+							<p>
+								FAST is developing down-stream services for the European Earth Observation Programme Copernicus to support cost-effective, nature-based shoreline protection against flooding and erosion. Open global datasets can be found in the data
+								portal.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="img/nhidp.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">NHI data portal<i class="mdi-navigation-more-vert right"></i></span>
+							<p><a target="_blank" href="https://data.nhi.nu/dataportaal">click to explore</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">NHI data portal<i class="mdi-navigation-close right"></i></span>
+							<p>
+								The Dutch Hydrological Instrumentarium (NHI) is a toolbox for software and data for the development of groundwater and surface water models on a national and regional scale. Within NHI we work towards open data and software.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--Parallax-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="img/parallax_mep.png"></div>
+	</div>
+
+	<!--Team-->
+	<div class="section scrollspy" id="team">
+		<div class="container">
+			<h2 class="header text_b"> OpenEarth Experts</h2>
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/fedor.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Fedor Baart<br />
+								<small><em><a class="red-text text-darken-1">Specialist</a></em></small>
 							</span>
 							<p>
-								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Joan">
-								   <i class="fa fa-envelope"></i>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Fedor">
+									<i class="fa fa-envelope"></i>
 								</a>
 							</p>
 						</div>
 					</div>
-			</div>		
-        </div>
-		<div class="row">
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/kees.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Kees den Heijer<br/>
-                            <small><em><a class="red-text text-darken-1">Advisor/developer</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Kees">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/willem.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Willem Stolte<br/>
-                            <small><em><a class="red-text text-darken-1">AQUO, INSPIRE</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Willem">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/maarten.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Maarten Pronk<br/>
-                            <small><em><a class="red-text text-darken-1">DevOps Engineer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Maarten">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>       
-			<div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/giorgio.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Giorgio Santinelli<br/>
-                            <small><em><a class="red-text text-darken-1">Backend developer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Giorgio">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>     
-        </div>
-		<div class="row">
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/matthijs.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Matthijs Schaap<br/>
-                            <small><em><a class="red-text text-darken-1">Frontend developer</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Kees">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/cindy.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Cindy van de Vries<br/>
-                            <small><em><a class="red-text text-darken-1">Frontend developer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Willem">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/bart.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Bart Adriaanse<br/>
-                            <small><em><a class="red-text text-darken-1">Frontend developer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Maarten">
-                               <i class="fa fa-envelope"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>       
-			     
-        </div>		
-    </div>
-</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/anna.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Anna van Gils<br />
+								<small><em><a class="red-text text-darken-1">Backend developer</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Anna">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/gerrit.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Gerrit Hendriksen<br />
+								<small><em><a class="red-text text-darken-1">Geo Data scientist</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Gerrit">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/maarten.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Maarten Pronk<br />
+								<small><em><a class="red-text text-darken-1">DevOps Engineer</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Maarten">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<!--Footer-->
-<footer id="contact" class="page-footer default_color scrollspy">
-    <div class="container">
-        <div class="row">
-<!--             <div class="col l6 s12">
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/kees.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Kees den Heijer<br />
+								<small><em><a class="red-text text-darken-1">Advisor/developer</a></em></small></span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Kees">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/willem.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Willem Stolte<br />
+								<small><em><a class="red-text text-darken-1">AQUO, INSPIRE</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Willem">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/giorgio.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Giorgio Santinelli<br />
+								<small><em><a class="red-text text-darken-1">Backend developer</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Giorgio">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/matthijs.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Matthijs Schaap<br />
+								<small><em><a class="red-text text-darken-1">Frontend developer</a></em></small></span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Kees">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card card-avatar">
+						<div class="waves-effect waves-block waves-light">
+							<img class="activator" src="img/cindy.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Cindy van de Vries<br />
+								<small><em><a class="red-text text-darken-1">Frontend developer</a></em></small>
+							</span>
+							<p>
+								<a class="blue-text text-lighten-2" href="mailto:deltaresdata@deltares.nl?subject=Contact Willem">
+									<i class="fa fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<footer id="contact" class="page-footer default_color scrollspy">
+		<div class="container">
+			<div class="row">
+				<!--             <div class="col l6 s12">
                 <form class="col s12" action="contact.php" method="post">
                     <div class="row">
                         <div class="input-field col s6">
@@ -628,53 +608,54 @@ In this viewer the hazards, with their impacts and exposure of the school buildi
                     </div>
                 </form>
             </div> -->
-            <div class="col l3 s12">                
-                <ul>
-                    <li>
-                        <a class="white-text" href="mailto:deltaresdata@deltares.nl">
-                            <i class="small fa fa-envelope-square white-text"></i> Email
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col l3 s12">                
-                <ul>
-                    <li>
-                        <a target="_blank" class="white-text" href="https://publicwiki.deltares.nl/display/OET">
-                            <i class="small fa fa-book white-text"></i> Wiki
-                        </a>
-                    </li>
-                </ul>
-            </div>			
-            <div class="col l3 s12">				
-                <ul>
-                    <li>
-                        <a target="_blank" class="white-text" href="https://github.com/openearth">
-                            <i class="small fa fa-github-square white-text"></i> GitHub
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col l3 s12">				
-                <ul>
-                    <li>
-                        <a target="_blank" class="white-text" href="https://www.linkedin.com/groups/3746269">
-                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>			
-        </div>
-    </div>
-    <div class="footer-copyright default_color">
+				<div class="col l3 s12">
+					<ul>
+						<li>
+							<a class="white-text" href="mailto:deltaresdata@deltares.nl">
+								<i class="small fa fa-envelope-square white-text"></i> Email
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<ul>
+						<li>
+							<a target="_blank" class="white-text" href="https://publicwiki.deltares.nl/display/OET">
+								<i class="small fa fa-book white-text"></i> Wiki
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<ul>
+						<li>
+							<a target="_blank" class="white-text" href="https://github.com/openearth">
+								<i class="small fa fa-github-square white-text"></i> GitHub
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<ul>
+						<li>
+							<a target="_blank" class="white-text" href="https://www.linkedin.com/groups/3746269">
+								<i class="small fa fa-linkedin-square white-text"></i> Linkedin
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright default_color">
 
-    </div>
-</footer>
+		</div>
+	</footer>
 
 
-    <!--  Scripts-->
-    <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script>
+	<!--  Scripts-->
+	<script src="min/plugin-min.js"></script>
+	<script src="min/custom-min.js"></script>
 
-    </body>
+</body>
+
 </html>
