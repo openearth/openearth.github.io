@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-	<meta name="theme-color" content="#2196F3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#123f50">
+	<meta name="description" content="OpenEarth is an open-source initiative for FAIR data, models and tools in earth science and engineering.">
 	<title>OpenEarth</title>
 
 	<!-- CSS  -->
@@ -14,6 +15,7 @@
 </head>
 
 <body id="top" class="scrollspy">
+	<a class="skip-link" href="#main-content">Skip to content</a>
 
 	<!-- Pre Loader -->
 	<div id="loader-wrapper">
@@ -26,42 +28,38 @@
 
 	<!--Navigation-->
 	<div class="navbar-fixed">
-		<nav id="nav_f" class="default_color" role="navigation">
+		<nav id="nav_f" class="default_color" aria-label="Main navigation">
 			<div class="container">
 				<div class="nav-wrapper">
-					<a href="#" id="logo-container" class="brand-logo"><img class="logohead" src="img/logo-oe.png"></a>
+					<a href="#top" id="logo-container" class="brand-logo" aria-label="OpenEarth home"><img class="logohead" src="img/logo-oe.png" alt="OpenEarth"></a>
 					<ul class="right hide-on-med-and-down">
 						<li><a href="#work">Work</a></li>
 						<li><a href="#team">Team</a></li>
-						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public
-								WIKI</a></li>
+						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank" rel="noopener noreferrer">Public wiki</a></li>
 					</ul>
-					<ul id="nav-mobile" class="side-nav">
+					<ul id="nav-mobile" class="side-nav" aria-label="Mobile navigation">
 						<li><a href="#work">Work</a></li>
 						<li><a href="#team">Team</a></li>
-						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank">Public
-								WIKI</a></li>
+						<li><a href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank" rel="noopener noreferrer">Public wiki</a></li>
 					</ul>
-					<a href="#" data-activates="nav-mobile" class="button-collapse"><i
-							class="mdi-navigation-menu"></i></a>
+					<a href="#nav-mobile" data-activates="nav-mobile" class="button-collapse" aria-label="Open navigation menu"><i
+							class="mdi-navigation-menu" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</nav>
 	</div>
 
+	<main id="main-content">
 	<!--Hero-->
 	<div class="section no-pad-bot" id="index-banner">
-		<div class="container">
-			<h1 class="text_h center header cd-headline letters type">
-				<span>OpenEarth is</span>
-				<span class="cd-words-wrapper waiting">
-					<b class="is-visible">open source</b>
-					<b>standardization</b>
-					<b>web services</b>
-					<b>visualization</b>
-					<b>enabling FAIR data</b>
-				</span>
-			</h1>
+		<div class="container hero-content">
+			<p class="hero-eyebrow">Open tools. Shared knowledge. Better decisions.</p>
+			<h1 class="text_h header">OpenEarth</h1>
+			<p class="hero-summary">Open-source tools for FAIR data, models and services in earth science and engineering.</p>
+			<div class="hero-actions">
+				<a class="hero-button" href="#work">Explore our work <span aria-hidden="true">&rarr;</span></a>
+				<a class="hero-link" href="https://publicwiki.deltares.nl/display/OET/OpenEarth" target="_blank" rel="noopener noreferrer">Visit the public wiki <span aria-hidden="true">&nearr;</span></a>
+			</div>
 		</div>
 	</div>
 
@@ -70,16 +68,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<h4 class="center header text_h2"> <span class="span_h2">OpenEarth</span> uses <span
+					<h2 class="center header text_h2"> <span class="span_h2">OpenEarth</span> uses <span
 							class="span_h2">open source tools</span> for kickstarting your tailor-made FAIR data management
 						solution. This will help you in enabling discovery, storing, sharing and providing
 						information of valuable data, such as <span class="span_h2"> observations</span>, <span
 							class="span_h2"> geographic data</span>,
-						and <span class="span_h2"> model results </span> </h4>
+						and <span class="span_h2"> model results </span> </h2>
 				</div>
 				<div class="col s12 m4 l4">
 					<div class="center promo promo-example">
-						<i class="mdi-notification-folder-special"></i>
+						<i class="mdi-notification-folder-special" aria-hidden="true"></i>
 						<!-- <i class="mdi mdi-folder-multiple-image"></i> -->
 
 						<h5 class="promo-caption">Data is essential</h5>
@@ -91,9 +89,9 @@
 				</div>
 				<div class="col s12 m4 l4">
 					<div class="mdi center promo promo-example">
-						<i class="mdi-toggle-check-box"></i>
+						<i class="mdi-toggle-check-box" aria-hidden="true"></i>
 						<h5 class="promo-caption">Data management checklist!</h5>
-						<p class="light center">Do you recognize yourself in the following statements?
+						<p class="light center">Do you recognize yourself in the following statements?</p>
 						<ul class="light center">
 							<li>Do you use <strong>standardized</strong> formats?</li>
 							<li>Can you <strong>download</strong> your data online?</li>
@@ -105,12 +103,11 @@
 							<li>Do you keep track of issues <strong>(lineage)</strong>?</li>
 							<li>Do you have a <strong>data model</strong>?</li>
 						</ul>
-						</p>
 					</div>
 				</div>
 				<div class="col s12 m4 l4">
 					<div class="center promo promo-example">
-						<i class="mdi-action-thumb-up"></i>
+						<i class="mdi-action-thumb-up" aria-hidden="true"></i>
 						<h5 class="promo-caption">OpenEarth greatly improves data management</h5>
 						<p class="light center">OpenEarth consists of Open Source tools to transform and store your data
 							in a standardized format. This enables you to easily:</p>
@@ -120,7 +117,6 @@
 							<li><strong>Share</strong> the data through an online download</li>
 							<li>Store the changes in the data <strong>(version control)</strong></li>
 						</ul>
-						</p>
 					</div>
 				</div>
 			</div>
@@ -129,25 +125,24 @@
 
 	<!--Parallax-->
 	<div class="parallax-container">
-		<div class="parallax"><img src="img/parallax_veg.jpg"></div>
+		<div class="parallax"><img src="img/parallax_veg.jpg" alt="" aria-hidden="true"></div>
 	</div>
 
 	<!--Work-->
 	<div class="section scrollspy" id="work">
 		<div class="container">
-			<h4 class="header text_b">OpenEarth projects</h4>
+			<h2 class="header text_b">OpenEarth projects</h2>
 
 			<div class="row">
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/shorelinmonitor.png">
+							<img class="activator" src="img/shorelinmonitor.png" alt="Global shoreline monitoring data visualization">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Shoreline Monitor<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://shoreline-monitor.netlify.app/">click to
-									explore</a>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://shoreline-monitor.netlify.app/">Explore project</a>
 							</p>
 						</div>
 						<div class="card-reveal">
@@ -163,12 +158,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/wadden.png">
+							<img class="activator" src="img/wadden.png" alt="Wadden Sea data portal">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Basismonitoring Wadden<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://viewer.openearth.nl/wadden-viewer">click to explore</a>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://viewer.openearth.nl/wadden-viewer">Explore project</a>
 							</p>
 						</div>
 						<div class="card-reveal">
@@ -185,12 +180,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/ast20.png">
+							<img class="activator" src="img/ast20.png" alt="Climate adaptation toolbox">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Klimaatbestendige Stad toolbox<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://kbstoolbox.nl/nl/">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://kbstoolbox.nl/nl/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Klimaatbestendige Stad toolbox<i
@@ -208,12 +203,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/msfd_eutro.png">
+							<img class="activator" src="img/msfd_eutro.png" alt="European marine water quality map">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">MSFD-Eutro (Water quality)<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="http://www.openearth.nl/msfd-eutro/">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://www.openearth.nl/msfd-eutro/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">MSFD-Eutro (Water quality)<i
@@ -231,13 +226,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/chw.png">
+							<img class="activator" src="img/chw.png" alt="Coastal Hazard Wheel classification tool">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Coastal Hazard Wheel Application<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://chw-app.coastalhazardwheel.org/">click to
-									explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://chw-app.coastalhazardwheel.org/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Coastal Hazard Wheel Application<i
@@ -249,13 +243,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/grondwatertoolbox.png">
+							<img class="activator" src="img/grondwatertoolbox.png" alt="Groundwater modeling toolbox">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">LHM Groundwater toolbox<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://grondwatereffect.netlify.app/">click to explore
-									(password required)</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://grondwatereffect.netlify.app/">Explore project (password required)</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">LHM Groundwater toolbox<i
@@ -264,7 +257,7 @@
 								The LHM Groundwater toolbox is a Proof Of Concept setup for Rijkswaterstaat. It enables
 								users to carry out a measure and perform a calculation with
 								a stationary model (iMODFLOW) of the LHM <a target="_blank"
-									href="https://nhi.nu/">(Dutch Hydrological Model)</a>. A password is required
+									href="https://nhi.nu/" rel="noopener noreferrer">(Dutch Hydrological Model)</a>. A password is required
 								because it is still in concept phase.
 							</p>
 						</div>
@@ -275,13 +268,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/wie.png">
+							<img class="activator" src="img/wie.png" alt="Rijkswaterstaat Water Info Extra portal">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">RWS Water Info Extra<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://viewer.openearth.nl/water-info-extra-viewer">click to
-									explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://viewer.openearth.nl/water-info-extra-viewer">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">RWS Water Info Extra<i
@@ -296,12 +288,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/sandmotor-viewer.png">
+							<img class="activator" src="img/sandmotor-viewer.png" alt="Sand Motor coastal data viewer">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Sandmotor Viewer<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://www.openearth.nl/sandmotor-viewer">click to explore</a>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://www.openearth.nl/sandmotor-viewer">Explore project</a>
 							</p>
 						</div>
 						<div class="card-reveal">
@@ -319,12 +311,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/immissietoets.png">
+							<img class="activator" src="img/immissietoets.png" alt="Water quality emission assessment tool">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Immissietoets<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://www.immissietoets.nl/">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://www.immissietoets.nl/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Immissietoets<i
@@ -347,12 +339,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/digitalesysteemrapportage.png">
+							<img class="activator" src="img/digitalesysteemrapportage.png" alt="Digital Wadden Sea system report">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Digital Wadden Sea System Report<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://www.systeemrapportage.nl/wadden/">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://www.systeemrapportage.nl/wadden/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Digital Wadden Sea System Report<i
@@ -368,12 +360,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/nl2120.png">
+							<img class="activator" src="img/nl2120.png" alt="NL2120 nature-based solutions data viewer">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">NL2120 Viewer<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://nl2120.netlify.app/viewer/">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://nl2120.netlify.app/viewer/">Explore project</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">NL2120 Viewer<i
@@ -388,19 +380,18 @@
 
 			</div>
 
-			<h4 class="header text_b">OpenEarth open data portals</h4>
+			<h2 class="header text_b">OpenEarth open data portals</h2>
 
 			<div class="row">
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/Deltares_logo_D-blauw_RGB.svg">
+							<img class="activator" src="img/Deltares_logo_D-blauw_RGB.svg" alt="Deltares data portal">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Deltares data portal<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://deltaresdata.openearth.eu/geonetwork">click to
-									explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://deltaresdata.openearth.eu/geonetwork">Explore portal</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Deltares data portal<i
@@ -415,12 +406,12 @@
 				<div class="col s12 m4 l4">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="img/fastdp.png">
+							<img class="activator" src="img/fastdp.png" alt="FAST EU data portal">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">FAST EU data portal<i
 									class="mdi-navigation-more-vert right"></i></span>
-							<p><a target="_blank" href="https://fast.openearth.eu/geonetwork">click to explore</a></p>
+							<p><a class="project-link" target="_blank" rel="noopener noreferrer" href="https://fast.openearth.eu/geonetwork">Explore portal</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">FAST EU data portal<i
@@ -441,18 +432,18 @@
 
 	<!--Parallax-->
 	<div class="parallax-container">
-		<div class="parallax"><img src="img/parallax_mep.png"></div>
+		<div class="parallax"><img src="img/parallax_mep.png" alt="" aria-hidden="true"></div>
 	</div>
 
 	<!--Team-->
 	<div class="section scrollspy" id="team">
 		<div class="container">
-			<h2 class="header text_b">OpenEarth Experts</h2>
+			<h2 class="header text_b">OpenEarth experts</h2>
 			<div class="row">
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/nathalie.jpg">
+							<img class="activator" src="img/nathalie.jpg" alt="Nathalie Dees">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Nathalie Dees<br />
@@ -460,8 +451,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Nathalie">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Nathalie" aria-label="Contact Nathalie through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -470,7 +461,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/luis.jpg">
+							<img class="activator" src="img/luis.jpg" alt="Luis Rodriguez Galvez">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Luis Rodriguez Galvez<br />
@@ -478,8 +469,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Luis">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Luis" aria-label="Contact Luis through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -488,7 +479,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/gerrit.jpg">
+							<img class="activator" src="img/gerrit.jpg" alt="Gerrit Hendriksen">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Gerrit Hendriksen<br />
@@ -496,8 +487,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Gerrit">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Gerrit" aria-label="Contact Gerrit through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -506,7 +497,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/maarten.jpg">
+							<img class="activator" src="img/maarten.jpg" alt="Maarten Pronk">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Maarten Pronk<br />
@@ -514,8 +505,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Maarten">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Maarten" aria-label="Contact Maarten through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -526,7 +517,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/ioanna.jpg">
+							<img class="activator" src="img/ioanna.jpg" alt="Ioanna Micha">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Ioanna Micha<br />
@@ -534,8 +525,8 @@
 											developer</a></em></small></span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Ioanna">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Ioanna" aria-label="Contact Ioanna through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -544,7 +535,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/willem.jpg">
+							<img class="activator" src="img/willem.jpg" alt="Willem Stolte">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Willem Stolte<br />
@@ -552,8 +543,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Willem">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Willem" aria-label="Contact Willem through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -562,7 +553,7 @@
 				<div class="col s12 m3">
 					<div class="card card-avatar">
 						<div class="waves-effect waves-block waves-light">
-							<img class="activator" src="img/mario.jpg">
+							<img class="activator" src="img/mario.jpg" alt="Mario Fuentes Monjaraz">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Mario Fuentes Monjaraz<br />
@@ -570,8 +561,8 @@
 							</span>
 							<p>
 								<a class="blue-text text-lighten-2"
-									href="mailto:deltaresdata@deltares.nl?subject=Contact Mario">
-									<i class="fa fa-envelope"></i>
+									href="mailto:deltaresdata@deltares.nl?subject=Contact Mario" aria-label="Contact Mario through the OpenEarth team">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</a>
 							</p>
 						</div>
@@ -580,6 +571,8 @@
 			</div>
 		</div>
 	</div>
+
+	</main>
 
 	<!--Footer-->
 	<footer id="contact" class="page-footer default_color scrollspy">
@@ -611,6 +604,10 @@
                     </div>
                 </form>
             </div> -->
+				<div class="col s12 contact-intro">
+					<h2>Questions about OpenEarth?</h2>
+					<p>Get in touch with the team at <a href="mailto:deltaresdata@deltares.nl">deltaresdata@deltares.nl</a>.</p>
+				</div>
 				<div class="col l3 s12">
 					<ul>
 						<li>
@@ -623,7 +620,7 @@
 				<div class="col l3 s12">
 					<ul>
 						<li>
-							<a target="_blank" class="white-text" href="https://publicwiki.deltares.nl/spaces/OET/pages/305758665/OpenEarth">
+							<a target="_blank" rel="noopener noreferrer" class="white-text" href="https://publicwiki.deltares.nl/spaces/OET/pages/305758665/OpenEarth">
 								<i class="small fa fa-book white-text"></i> Wiki
 							</a>
 						</li>
@@ -632,7 +629,7 @@
 				<div class="col l3 s12">
 					<ul>
 						<li>
-							<a target="_blank" class="white-text" href="https://github.com/openearth">
+							<a target="_blank" rel="noopener noreferrer" class="white-text" href="https://github.com/openearth">
 								<i class="small fa fa-github-square white-text"></i> GitHub
 							</a>
 						</li>
@@ -641,7 +638,7 @@
 				<div class="col l3 s12">
 					<ul>
 						<li>
-							<a target="_blank" class="white-text" href="https://www.linkedin.com/groups/3746269">
+							<a target="_blank" rel="noopener noreferrer" class="white-text" href="https://www.linkedin.com/groups/3746269">
 								<i class="small fa fa-linkedin-square white-text"></i> Linkedin
 							</a>
 						</li>
@@ -657,7 +654,7 @@
 
 	<!--  Scripts-->
 	<script src="min/plugin-min.js"></script>
-	<script src="min/custom-min.js"></script>
+	<script src="js/init.js"></script>
 
 </body>
 
